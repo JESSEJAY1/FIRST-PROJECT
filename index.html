@@ -1,24 +1,174 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CodeLearn - Coding Tutorials</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- Navigation Bar -->
     <header>
-        <h1>Welcome to My First Project</h1>
-        <p> My name is Jesse</p>
+        <nav class="navbar">
+            <h1 class="logo">CodeLearn</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tutorials">Tutorials</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>About This Project</h2>
-            <p>This is a simple HTML project to demonstrate my skills.</p>
-        </section>
-    </main>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h2>Learn Coding From Scratch</h2>
+
+            <p>
+                Welcome to CodeLearn, a simple tutorial website
+                designed to help beginners understand programming
+                and web development.
+            </p>
+
+            <a href="#tutorials" class="button">Start Learning</a>
+        </div>
+
+    </section>
+
+
+    <!-- Description Section -->
+    <section class="description">
+
+        <h2>What is Coding?</h2>
+
+        <p>
+            Coding is the process of writing instructions that tell
+            a computer what to do. Programming languages such as
+            HTML, CSS, JavaScript, Python and C++ are used to create
+            websites, applications, games and other software.
+        </p>
+
+    </section>
+
+
+    <!-- Tutorials Section -->
+    <section id="tutorials" class="tutorials">
+
+        <h2>Our Tutorials</h2>
+
+        <p class="section-description">
+            Choose a topic below and start learning.
+        </p>
+
+
+        <div class="tutorial-container">
+
+            <!-- HTML Card -->
+            <div class="tutorial-card">
+
+                <h3>HTML</h3>
+
+                <p>
+                    Learn how to create the structure of a website
+                    using HTML elements such as headings, paragraphs,
+                    images, links and buttons.
+                </p>
+
+                <a href="#" class="learn-button">Learn HTML</a>
+
+            </div>
+
+
+            <!-- CSS Card -->
+            <div class="tutorial-card">
+
+                <h3>CSS</h3>
+
+                <p>
+                    Learn how to style websites by changing colors,
+                    fonts, spacing, layouts and other visual elements.
+                </p>
+
+                <a href="#" class="learn-button">Learn CSS</a>
+
+            </div>
+
+
+            <!-- JavaScript Card -->
+            <div class="tutorial-card">
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    Learn how to make websites interactive using
+                    JavaScript, including buttons, events,
+                    calculations and dynamic content.
+                </p>
+
+                <a href="#" class="learn-button">Learn JavaScript</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+
+        <h2>About CodeLearn</h2>
+
+        <p>
+            CodeLearn was created to make programming easier for
+            beginners. Our tutorials explain programming concepts
+            in a simple and practical way.
+        </p>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Have a question? Send us a message.
+        </p>
+
+        <form>
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 My First Project</p>
+
+        <p>
+            © 2026 CodeLearn. All rights reserved.
+        </p>
+
     </footer>
+
 </body>
 </html>
