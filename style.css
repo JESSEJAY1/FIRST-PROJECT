@@ -1,0 +1,235 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #222;
+}
+/* Navigation Bar */
+header {
+    background-color: #a1bbf4;
+    padding: 15px 8%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: white;
+    font-size: 28px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links a:hover {
+    color: #0758bb;
+}
+/* Hero Section */
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #111827
+    );
+}
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+/* Buttons */
+.button,
+.learn-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.button {
+    background-color: white;
+    color: #2563eb;
+}
+.button:hover {
+    background-color: #e5e7eb;
+}
+/* Description */
+.description {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 20px;
+    text-align: center;
+}
+.description h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.description p {
+    font-size: 18px;
+    color: #555;
+}
+/* Tutorials */
+.tutorials {
+    padding: 70px 8%;
+    background-color: white;
+    text-align: center;
+}
+.tutorials h2 {
+    font-size: 35px;
+}
+.section-description {
+    margin-bottom: 40px;
+    color: #666;
+}
+/* Tutorial Cards */
+.tutorial-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.tutorial-card {
+    background-color: #f8fafc;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.tutorial-card:hover {
+    transform: translateY(-8px);
+}
+.tutorial-card h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.tutorial-card p {
+    color: #555;
+    margin-bottom: 25px;
+}
+.learn-button {
+    background-color: #2563eb;
+    color: white;
+}
+.learn-button:hover {
+    background-color: #1d4ed8;
+}
+/* About Section */
+.about {
+    padding: 70px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.about p {
+    color: #555;
+    font-size: 18px;
+}
+/* Contact Section */
+.contact {
+    background-color: #e5e7eb;
+    padding: 70px 20px;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.contact p {
+    margin-bottom: 25px;
+}
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+textarea { 
+    height: 150px;
+    resize: none;
+}
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1d4ed8;
+}
+/* Footer */
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+/* Mobile Responsive Design */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero h2 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 17px;
+    }
+    .tutorial-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
